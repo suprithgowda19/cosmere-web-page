@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f0eeee !important;
+}
+.drop {
+  background-color: black !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
+  opacity: 0.7;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.sub-drop1 {
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  display: none;
+  text-align: left;
+  list-style: none;
+  background-color: black !important;
+  border-radius: 7px;
+}
+.service:hover + .sub-drop1,
+.sub-drop1:hover {
+  display: block;
+}
+
+.box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.font {
+  font-size: xx-large;
+}
+.font1 {
+  font-size: large;
+  font-weight: bold;
+}
+.back {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.back1 {
+  background-image: url(images/1.png);
+}
+
+.back2 {
+  background-image: url(images/2.png);
+}
+.back3 {
+  background-image: url(images/3.png);
+}
+.back4 {
+  background-image: url(images/4.png);
+}
+.back5 {
+  background-image: url(images/5.png);
+}
+.back6 {
+  background-image: url(images/6.png);
+}
+.back1:hover .card1,
+.back2:hover .card2,
+.back3:hover .card3,
+.back4:hover .card4,
+.back5:hover .card5,
+.back6:hover .card6 {
+  visibility: hidden;
+}
+.logo1,
+.logo2,
+.logo3,
+.logo4 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  transition: 1s ease;
+  display: none;
+}
+.man1:hover .logo1,
+.man2:hover .logo2,
+.man3:hover .logo3,
+.man4:hover .logo4 {
+  transition: 1s ease;
+  display: block;
+}
+.gray {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.gray:hover {
+  filter: grayscale(0%);
+  opacity: 0.3;
+}
+/* desktop: show all 5 */
+#auto-slider .col-sm-12 {
+  display: block;
+}
+
+/* mobile: show only 1 image */
+@media (max-width: 768px) {
+  #auto-slider .col-sm-12 {
+    display: none;
+  }
+  #auto-slider .col-sm-12.active {
+    display: block;
+  }
+}
+.font {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.logo-pos {
+  width: 40px;
+  height: 32px;
+
+  top: 31%;
+  left: 12%;
+}
+
+.img-con {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-con img {
+  transition: transform 0.5s ease;
+}
+.img-con:hover img {
+  transform: scale(1.2);
+}
+.phone{
+  width:50px;
+  height: 50px;
+}
+.phone1{
+    width: 33px;
+    height: 33px;
+}

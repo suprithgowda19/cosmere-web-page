@@ -1,0 +1,1 @@
+(function($){"use strict";$(window).on("load",function(){$('.home-slider').slick({autoplay:!0,dots:!0,nextArrow:'<i class="fa fa-angle-right"></i>',prevArrow:'<i class="fa fa-angle-left"></i>',speed:1000,fade:!0,pauseOnHover:!1,pauseOnFocus:!1,dotsClass:'custom-paging',customPaging:function(slider,i){console.log(slider);return(i+1)+'/'+slider.slideCount}})})})(jQuery)
