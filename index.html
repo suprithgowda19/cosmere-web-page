@@ -12,132 +12,105 @@
 </head>
 
 <body>
+<nav style="background-color: #f0eeee;" class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/new-logo.png" alt="Logo" style="width: 120px; height:60px;">
+            </a>
 
-    <nav class="navbar navbar-expand-lg header">
-        <div class="container-fluid header">
-            <a class="navbar-brand" href="#"><img src="images/new-logo.png" alt="Cosmere logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse abd " id="navbarSupportedContent">
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                
+                <button class="btn-close d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Close"></button>
+
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link   fw-bold" aria-current="page" href="#">HOME</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
                     </li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">
                             SERVICES
                         </a>
-                        <ul class="dropdown-menu drop  ">
-
-                            <li><a class="dropdown-item text-white postion-relative service " href="#">BM SERVICES</a>
-                                <div class=" sub-drop1">
-
-                                    <ul class="list-unstyled text-white   p-3 rounded-3">
-                                        <li><a class="text-white text-decoration-none" href="#">3D MODELLING <br>
-                                                SERVICES </a></li>
-                                        <li><a class="text-white text-decoration-none" href="#">SCAN TO BIM </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none" href="#">BIM 4D $ 5D <br>
-                                                SIMULATIONS </a></li>
-                                        <li><a class="text-white text-decoration-none" href="#">REVIT MODELLING
-                                                SERVICES <br> SERVICES
-                                            </a></li>
-                                        <li><a class="text-white text-decoration-none" href="#">BIM AUDITING </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none" href="#">CLASH ANALYSIS </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none" href="#">6D SUSTAINABILITY
-                                            </a></li>
-                                    </ul>
-                                </div>
-
-
-
-
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item has-arrow" href="#">&lt; BIM SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">3D MODELING SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">SCAN TO BIM</a></li>
+                                    <li><a class="dropdown-item" href="#">BIM 4D & 5D SIMULATIONS</a></li>
+                                    <li><a class="dropdown-item" href="#">REVIT MODELING SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">BIM AUDITING</a></li>
+                                    <li><a class="dropdown-item" href="#">CLASH ANALYSIS</a></li>
+                                    <li><a class="dropdown-item" href="#">6D SUSTAINABILITY</a></li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item text-white postion-relative service " href="#">CAD SERVICES</a>
-
-                                <div class=" sub-drop1">
-
-                                    <ul class="list-unstyled text-white   p-3 rounded-3">
-                                        <li><a class="text-white text-decoration-none opa" href="#">3D MODELLING <br>
-                                                SERVICES </a></li>
-                                        <li><a class="text-white text-decoration-none opa" href="#">SCAN TO BIM </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none" href="#">BIM 4D $ 5D <br>
-                                                SIMULATIONS </a></li>
-                                        <li><a class="text-white text-decoration-none opa" href="#">REVIT MODELLING
-                                                SERVICES
-                                                <br> SERVICES
-                                            </a></li>
-                                        <li><a class="text-white text-decoration-none opa" href="#">BIM AUDITING </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none opa" href="#">CLASH ANALYSIS </a>
-                                        </li>
-                                        <li><a class="text-white text-decoration-none opa" href="#">6D SUSTAINABILITY
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item has-arrow" href="#">&lt; CAD SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ARCHITECTURAL, STRUCTURAL DRAFTING & MODELLING</a></li>
+                                    <li><a class="dropdown-item" href="#">MEPF DRAFTING AND MODELLING</a></li>
+                                    <li><a class="dropdown-item" href="#">SKETCHUP MODELING SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">STEEL DETAILING SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">MILLWORK DRAFTING SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">PDF TO CAD CONVERSION SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">PRECAST DETAILING</a></li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item text-white service" href="#">POINTCLOUD <br> SERVICES</a>
-                                <div class=" sub-drop1">
-
-                                    <ul class="list-unstyled text-white   p-3 rounded-3">
-                                        <li><a class="text-white text-decoration-none" href="#">3D MODELLING <br>
-                                                SERVICES </a></li>
-                                        <li><a class="text-white text-decoration-none" href="#">SCAN TO BIM </a></li>
-                                        <li><a class="text-white text-decoration-none" href="#">BIM 4D $ 5D <br>
-                                                SIMULATIONS </a></li>
-
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item has-arrow" href="#">&lt; POINTCLOUD SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">SCAN TO 3D CAD MODEL SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">OFFERING EXCELLENT SCAN TO 2D DRAWINGS</a></li>
+                                    <li><a class="dropdown-item" href="#">INTELLIGENT MODEL & ISOMETRIC DRAWINGS</a></li>
+                                    <li><a class="dropdown-item" href="#">AS-BUILT SCAN V/S DESIGN MODEL ANALYSIS</a></li>
+                                    <li><a class="dropdown-item" href="#">POINT CLOUD SIMULATION & CLASH ANALYSIS</a></li>
+                                </ul>
                             </li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item has-arrow" href="#">&lt; GEOSPATIAL</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">GIS SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">LIDAR SERVICES</a></li>
+                                    <li><a class="dropdown-item" href="#">PHOTOGRAMMETRY</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="#">AR & VR SERVICES</a></li>
+                            <li><a class="dropdown-item" href="#">VISUALIZATION SERVICES</a></li>
                         </ul>
-            </div>
-
-            </li>
-
-            <li><a class="dropdown-item text-white " href="#">GEOSPATIAL</a></li>
-            <li><a class="dropdown-item text-white " href="#">AR & VR</a></li>
-            <li><a class="dropdown-item  text-white" href="#">VISUALIZATION <br> SERVICES</a></li>
-
-            </li>
-
-            </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    RESOURCES
-                </a>
-                <ul class="dropdown-menu drop ">
-                    <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-
-
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button">
+                            RESOURCES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="#">PROJECT & SAMPLE</a></li>
+                            <li><a class="dropdown-item" href="#">CASE STUDIES</a></li>
+                            <li><a class="dropdown-item" href="#">BLOGS</a></li>
+                            <li><a class="dropdown-item" href="#">INFOGRAPHICS</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  fw-bold" aria-current="page" href="#">ABOUT US</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link  fw-bold" aria-current="page" href="#">CONTACT US</a>
-            </li>
-
-
-
-        </div>
+            </div>
         </div>
     </nav>
+    
     <div style="background-color: #cfcfcf;" class="container-fluid py-5">
         <div class="row">
             <div class="col-lg-10 col-sm-12 mx-auto text-center p-5 ">

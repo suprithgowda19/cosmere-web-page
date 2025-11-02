@@ -48,3 +48,48 @@ function autoSlide() {
 
 autoSlide(); // initial
 setInterval(autoSlide, 3000);
+
+//new changes
+document.addEventListener("DOMContentLoaded", function() {
+
+            // --- Handle L1 -> L2 Accordions (Services, Resources) ---
+            var mainToggles = document.querySelectorAll('.nav-item.dropdown > .dropdown-toggle');
+            mainToggles.forEach(function(toggle) {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth < 992) {
+                        e.preventDefault(); 
+                        this.classList.toggle('open');
+                        var submenu = this.nextElementSibling;
+                        if (submenu && submenu.classList.contains('dropdown-menu')) {
+                            submenu.classList.toggle('open');
+                        }
+                    }
+                });
+            });
+
+            // --- Handle L2 -> L3 Accordions (BIM, CAD, etc.) ---
+            var submenuTriggers = document.querySelectorAll('.dropdown-submenu > .dropdown-item.has-arrow');
+            submenuTriggers.forEach(function(trigger) {
+                
+                trigger.addEventListener('click', function(e) {
+                    if (window.innerWidth < 992) {
+                        e.preventDefault();
+                        this.classList.toggle('open');
+                        var submenu = this.nextElementSibling;
+                        if (submenu && submenu.classList.contains('dropdown-menu')) {
+                            submenu.classList.toggle('open');
+                        }
+                    }
+                });
+            });
+
+            // --- Reset accordions when mobile menu is closed ---
+            var navbarCollapse = document.getElementById('mainNavbar');
+            if (navbarCollapse) {
+                navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                    document.querySelectorAll('.dropdown-menu.open, .dropdown-toggle.open, .dropdown-item.open').forEach(function(element) {
+                        element.classList.remove('open');
+                    });
+                });
+            }
+        });
